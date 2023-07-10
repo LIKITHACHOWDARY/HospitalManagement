@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body
+	style="background-image: url('https://tse1.explicit.bing.net/th?id=OIP.sugXlLHCeaM53vpTFWTJTQHaFD&amp;pid=Api&amp;P=0&amp;h=180'); background-repeat: no-repeat; background-size: cover;">
+	<h1 style="margin-left: 520px; margin-top: 100px">Enter Staff
+		Detais</h1>
+	<form action="staff" method="post" style="margin-left: 500px;">
+		<table>
+			<tr>
+				<th><label for="name">Name</label></th>
+				<th><input type="text" name="name" id="name"></th>
+			</tr>
+			<tr>
+				<th><label for="mobile">Mobile:</label></th>
+				<th><input type="tel" pattern="{0-9}[10]" name="mobile"></th>
+			</tr>
+			<tr>
+				<th><label for="email">Email:</label></th>
+				<th><input type="email" name="email"></th>
+			</tr>
+			<tr>
+				<th><label for="password">Password</label></th>
+				<th><input type="password" name="password"></th>
+			</tr>
+			<tr>
+				<th><label for="dob">DOB:</label></th>
+				<th><input type="date" name="dob" id="dob"></th>
+			</tr>
+			<tr>
+				<th><label for="gender">Gender</label></th>
+				<th><input type="radio" name="gender" value="male" id="male">Male
+					<input type="radio" name="gender" value="female" id="female">FeMale
+				</th>
+			</tr>
+
+			<tr>
+				<td><button type="reset">Cancel</button></td>
+				<td><button>Register</button></td>
+			</tr>
+
+
+		</table>
+	</form>
+
+</body>
+</html>
