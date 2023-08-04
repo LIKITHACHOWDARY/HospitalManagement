@@ -10,12 +10,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>Staff Details</h2>
+	<h1 style="margin-left: 500px; ">Staff Details</h1>
 	<%
 		List<Staff> list = (List<Staff>) request.getAttribute("list");
 	%>
 	<div>
-		<table border='1'>
+		<table border='1' style="margin-left: 430px; ">
 			<tr>
 				<th>ID</th>
 				<th>Name</th>
@@ -33,13 +33,13 @@
 				<td><%=std.getMobile()%></td>
 				<td><%=std.getAge()%></td>
 				<td><%=std.isStatus()%></td>
-				<td><a href="changestaffstatus?id=<%=std.getId()%>"><button>Change</button></a></td>
+				<td><a href="changestaffstatus?id=<%=std.getId()%>"><img alt="change" src="changestatus.jpg" height="50px" width="50px" ></a></td>
 			</tr>
 			<%
 				}
 			%>
 		</table>
-		<br> <a href="Adminhome.html"><button>Back</button></a>
+		<br> <a href="Adminhome.html"><img alt="Back" src="Back.jpg" height="50px" width="50px" style="margin-left: 430px;"></a>
 
 	</div>
 </body>

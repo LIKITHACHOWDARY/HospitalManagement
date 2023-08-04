@@ -25,7 +25,7 @@ public class ChangeStaff extends HttpServlet {
 		}
 		dao.updateStaff(staff);
 
-		resp.getWriter().print("<h1> updated Sucessfully</h1>");
+		resp.getWriter().print("<h1  style='margin-left: 470px; margin-top: 150px; color:green'> updated Sucessfully</h1>");
 		req.setAttribute("list", dao.Fetchallstaff());
 		req.getRequestDispatcher("Approvestaff.jsp").include(req, resp);
 	}

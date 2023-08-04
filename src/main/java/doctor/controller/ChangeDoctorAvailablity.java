@@ -26,11 +26,15 @@ public class ChangeDoctorAvailablity extends HttpServlet {
 				dao.updatedoctor(doctor);
 				req.getSession().setAttribute("doctor", doctor);
 				resp.getWriter().print("<h1> Changed to not Available</h1>");
+				req.getRequestDispatcher("DoctorHome.html").include(req, resp);
+
 			} else {
 				doctor.setAvailable(true);
 				dao.updatedoctor(doctor);
 				req.getSession().setAttribute("doctor", doctor);
 				resp.getWriter().print("<h1> Changed to  Available</h1>");
+				req.getRequestDispatcher("DoctorHome.html").include(req, resp);
+
 			}
 		}
 	}

@@ -10,6 +10,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div style="margin-left: 350px;margin-top: 150px;">
+<h1>Enter patient details to be updated</h1>
 	<%
 		int id = Integer.parseInt(request.getParameter("id"));
 		MyDao dao = new MyDao();
@@ -22,11 +24,11 @@
 
 	<form action="updatepatient" method="post">
 		Id:<input type="text" name="id" value="<%=patient.getId()%>"
-			readonly="readonly"> <br> Name:<input type="text"
-			name="name" value="<%=patient.getName()%>"> <br> Mobile:<input
+			readonly="readonly"> <br><br> Name:<input type="text"
+			name="name" value="<%=patient.getName()%>"> <br><br> Mobile:<input
 			type="text" name="mobile" value="<%=patient.getMobile()%>"
-			readonly="readonly"> <br> Date of Birth:<input
-			type="date" name="dob" value="<%=patient.getDob()%>"> <br>
+			readonly="readonly"> <br><br> Date of Birth:<input
+			type="date" name="dob" value="<%=patient.getDob()%>"> <br><br>
 		<button>Update</button>
 		<button type="reset">Cancel</button>
 	</form>
@@ -35,5 +37,6 @@
 	<%
 		}
 	%>
+	</div>
 </body>
 </html>

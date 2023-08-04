@@ -11,6 +11,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div style="margin-left: 300px;margin-top: 150px;">
+<h1>Upcoming Appointments</h1>
 		<%
 		Doctor doctor = (Doctor) session.getAttribute("doctor");
 		if (doctor == null) {
@@ -66,5 +68,6 @@
 	<%
 		}
 	%>
+	</div>
 </body>
 </html>

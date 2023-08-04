@@ -25,7 +25,7 @@ public class ChangeDoctor extends HttpServlet {
 		}
 		dao.updatedoctor(doctor);
 
-		resp.getWriter().print("<h1> updated Sucessfully</h1>");
+		resp.getWriter().print("<h1 align='center' style='margin-top: 200px;'> updated Sucessfully</h1>");
 		req.setAttribute("list", dao.Fetchalldoctor());
 		req.getRequestDispatcher("ApproveDoctor.jsp").include(req, resp);
 	}

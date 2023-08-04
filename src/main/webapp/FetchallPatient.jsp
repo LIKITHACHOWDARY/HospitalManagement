@@ -17,7 +17,7 @@
 	<%
 		List<Patient> list = (List<Patient>) request.getAttribute("list");
 	%>
-	<div>
+	<div align="center" >
 		<table border='1'>
 			<tr>
 				<th>PID</th>

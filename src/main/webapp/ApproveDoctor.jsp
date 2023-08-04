@@ -9,6 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div align="center"  >
 	<h2>Doctor Details</h2>
 	<%
 		List<Doctor> list = (List<Doctor>) request.getAttribute("list");
@@ -34,14 +35,15 @@
 				<td><%=doctor.getAge()%></td>
 				<td><%=doctor.getSpecialization()%></td>
 				<td><%=doctor.isStatus()%></td>
-				<td><a href="changedoctorstatus?id=<%=doctor.getId()%>"><button>Change</button></a></td>
+				<td><a href="changedoctorstatus?id=<%=doctor.getId()%>"><button style="border-radius: 50px;">Change</button></a></td>
 			</tr>
 			<%
 				}
 			%>
 		</table>
-		<br> <a href="Adminhome.html"><button>Back</button></a>
+		<br> <a href="Adminhome.html"><button style="border-radius: 50px;margin-left: -500px;">Back</button></a>
 
+	</div>
 	</div>
 </body>
 </html>

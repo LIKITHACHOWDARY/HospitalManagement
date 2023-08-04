@@ -13,13 +13,15 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div align="center" style="margin-top: 200px">
+
 	<%
 		int pid = Integer.parseInt(request.getParameter("id"));
 		MyDao dao = new MyDao();
 		Patient patient = dao.fetchpatient(pid);
 		List<Appointment> list = patient.getAppointments();
 		if (list.isEmpty()) {
-			response.getWriter().print("<h1 style='color:red'>No Apppoinments Yet</h1>");
+			response.getWriter().print("<h1 style='color:red' align='center'>No Apppoinments Yet</h1>");
 			request.setAttribute("list", dao.Fetchallpatient());
 			request.getRequestDispatcher("ViewPatientHistory.jsp").include(request, response);
 		} else {
@@ -61,9 +63,10 @@
 
 	</table>
 	<br>
-	<a href="adminfetchallpatients"><button>Back</button></a>
+	<a href="adminfetchallpatients"><button style="border-radius: 50px; margin-left: -530px;">Back</button></a>
 	<%
 		}
 	%>
+	</div>
 </body>
 </html>

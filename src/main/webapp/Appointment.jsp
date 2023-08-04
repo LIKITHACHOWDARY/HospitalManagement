@@ -7,6 +7,7 @@
 <title>Appointment Form</title>
 </head>
 <body>
+<div style="margin-left: 350px;margin-top: 150px;">
 	<h2>Booking Appointment</h2>
 	<%
 		if (session.getAttribute("staff") == null) {
@@ -24,5 +25,7 @@
 		}
 	%>
 	<a href="StaffHome.html"><button>Back</button></a>
+	</div>
+	
 </body>
 </html>

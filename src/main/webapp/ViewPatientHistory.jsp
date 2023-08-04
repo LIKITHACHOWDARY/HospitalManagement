@@ -10,6 +10,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div align="center" style="margin-top: 50px;">
 	<h2>Patient Details</h2>
 <%
 		List<Patient> list = (List<Patient>) request.getAttribute("list");
@@ -37,12 +38,13 @@
 			%>
 			<img height="50px" width="50px" alt="unknown" src="data:image/jpeg;base64,<%=base64%>">
 			</th>
-			<th><a href="ViewPatientAppointment.jsp?id=<%=patient.getId()%>"><button>Click</button></a></th>
+			<th><a href="ViewPatientAppointment.jsp?id=<%=patient.getId()%>"><button style="border-radius: 50px">Click</button></a></th>
 		</tr>
 		<%
 			}
 		%>
 	</table><br><br>
-	<a href="Adminhome.html"><button>Back</button></a>
+	<a href="Adminhome.html"><button style="border-radius: 50px; margin-left: -480px;">Back</button></a>
+	</div>
 </body>
 </html>

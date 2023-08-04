@@ -14,6 +14,7 @@
 <title>Appointment Form</title>
 </head>
 <body>
+<div style="margin-left: 350px;margin-top: 150px;">
 <h1>Appoint Form</h1>
 	<%
 		Staff staff = (Staff) session.getAttribute("staff");
@@ -88,6 +89,6 @@
 		}
 	%>
 
-
+</div>
 </body>
 </html>

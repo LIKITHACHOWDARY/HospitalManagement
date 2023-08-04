@@ -10,6 +10,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div style="margin-left: 350px;">
 	<h2>Patient Details</h2>
 	<%
 		List<Patient> list = (List<Patient>) request.getAttribute("list");
@@ -47,5 +48,6 @@
 	</div>
 	<br>
 	<a href="StaffHome.html"><button>Back</button></a>
+	</div>
 </body>
 </html>
